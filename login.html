@@ -5,8 +5,7 @@
     <title>Login form</title>
     <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--<script src="assets/libs/jquery/jquery-3.3.1.min.js"></script>-->
-    <!--<script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>-->
+    <script src="assets/libs/jquery/jquery-3.3.1.min.js"></script>
     <script src="assets/js/validation.js"></script>
 </head>
 <body>
@@ -17,18 +16,18 @@
                 <h2 class="text-center">Login</h2>
             </div>
             <div class="modal-body">
-                <form action="" role="form">
+                <form action="" role="form" id="login-form">
 
                     <div class="form-group inputs">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input type="text" class="form-control" id="login" placeholder="Login" minlength="3" maxlength="20" pattern="[0-9A-Za-z ]+">
+                            <input type="text" class="form-control" id="login" placeholder="Login" minlength="3" maxlength="20" pattern="[0-9A-Za-z _-]+" required>
                         </div>
                     </div>
                     <div class="form-group inputs">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                            <input type="password" class="form-control" placeholder="Password" minlength="5" maxlength="20" pattern="">
+                            <input type="password" class="form-control" id="password" placeholder="Password" minlength="5" maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]*" required>
                         </div>
                     </div>
 

@@ -83,5 +83,7 @@ body {
   .login-container .submit-btn {
     margin-top: 30px;
     margin-bottom: 0; }
+  .login-container h1 {
+    margin-bottom: 30px; }
 
 /*# sourceMappingURL=style.css.map */
