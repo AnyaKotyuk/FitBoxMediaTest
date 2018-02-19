@@ -9,7 +9,8 @@
   font-weight: 600;
   font-style: normal; }
 body {
-  font-family: Roboto; }
+  font-family: Roboto;
+  color: #000000; }
 
 .form-control::-webkit-input-placeholder {
   color: #000000;
@@ -41,30 +42,46 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center; }
-  .login-overlay .login-container {
-    padding: 12px;
-    line-height: 20px;
-    background-color: rgba(255, 255, 255, 0.35); }
-    .login-overlay .login-container > div {
-      padding: 24px;
-      background-color: #b3b3b3;
-      box-shadow: 0px 0px 20px 0px black;
-      border-radius: 0; }
-    .login-overlay .login-container h2 {
-      font-size: 26px;
-      text-transform: uppercase;
-      font-family: Roboto-Medium; }
-    .login-overlay .login-container input {
-      border: solid 1px #575757;
-      border-radius: 0; }
-    .login-overlay .login-container button[type=submit] {
-      width: 166px;
-      border-radius: 4px;
-      background-color: #ff000f;
-      color: white;
-      font-size: 14px;
-      border: none;
-      font-family: Roboto-Medium;
-      text-transform: uppercase; }
+
+.login-container {
+  max-width: 312px;
+  padding: 12px;
+  line-height: 20px;
+  background-color: rgba(255, 255, 255, 0.35); }
+  .login-container > div {
+    padding: 10px 10px 0;
+    background-color: #b3b3b3;
+    box-shadow: 0px 0px 20px 0px black;
+    border-radius: 0; }
+  .login-container h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: Roboto-Medium; }
+  .login-container .inputs {
+    border: solid 1px #575757; }
+    .login-container .inputs input {
+      border-color: transparent;
+      padding-left: 0; }
+  .login-container button[type=submit] {
+    width: 166px;
+    border-radius: 4px;
+    background-color: #ff000f;
+    color: white;
+    font-size: 14px;
+    border: none;
+    font-family: Roboto-Medium;
+    text-transform: uppercase; }
+  .login-container .input-group-addon {
+    background-color: #fff;
+    border: none; }
+  .login-container .forgot-password {
+    margin-bottom: 0; }
+    .login-container .forgot-password a {
+      font-size: 12px;
+      color: inherit;
+      text-decoration: underline; }
+  .login-container .submit-btn {
+    margin-top: 30px;
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
